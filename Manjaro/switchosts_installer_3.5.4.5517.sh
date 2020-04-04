@@ -1,3 +1,5 @@
+#!/bin/sh
+
 GetCurrentScriptName () {
     echo "$(basename "$0")"
 }
