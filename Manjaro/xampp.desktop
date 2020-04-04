@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[it_IT]=
+Comment=
+Exec=kdesu /opt/lampp/manager-linux-x64.run
+GenericName[it_IT]=
+GenericName=
+Icon=/opt/lampp/htdocs/favicon.ico
+MimeType=
+Name[it_IT]=xampp
+Name=xampp
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
