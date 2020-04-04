@@ -50,18 +50,19 @@ rm SwitchHosts.zip
 
 if [ ! -d $HOME/Desktop/SwitchHosts ]; then
     # creating dekstopfile
-    echo "[Desktop Entry]" >>$HOME/Desktop/SwitchHosts
-    echo "Comment=" >>$HOME/Desktop/SwitchHosts
-    echo "Exec=$SWITCHHOSTS_PATH/switchhosts" >>$HOME/Desktop/SwitchHosts
-    echo "GenericName=" >>$HOME/Desktop/SwitchHosts
-    echo "Icon=$SWITCHHOSTS_PATH/favicon.png" >>$HOME/Desktop/SwitchHosts
-    echo "Name=SwitchHosts" >>$HOME/Desktop/SwitchHosts
-    echo "Path=$SWITCHHOSTS_PATH" >>$HOME/Desktop/SwitchHosts
-    echo "StartupNotify=true" >>$HOME/Desktop/SwitchHosts
-    echo "Terminal=false" >>$HOME/Desktop/SwitchHosts
-    echo "TerminalOptions=" >>$HOME/Desktop/SwitchHosts
-    echo "Type=Application" >>$HOME/Desktop/SwitchHosts
-    chmod +x $HOME/Desktop/SwitchHosts
+    desktopFile=$HOME/Desktop/SwitchHosts.desktop
+    echo "[Desktop Entry]" >>$desktopFile
+    echo "Comment=" >>$desktopFile
+    echo "Exec=$SWITCHHOSTS_PATH/switchhosts" >>$desktopFile
+    echo "GenericName=" >>$desktopFile
+    echo "Icon=$SWITCHHOSTS_PATH/favicon.png" >>$desktopFile
+    echo "Name=SwitchHosts" >>$desktopFile
+    echo "Path=$SWITCHHOSTS_PATH" >>$desktopFile
+    echo "StartupNotify=true" >>$desktopFile
+    echo "Terminal=false" >>$desktopFile
+    echo "TerminalOptions=" >>$desktopFile
+    echo "Type=Application" >>$desktopFile
+    chmod +x $desktopFile
 fi
 
 echo "Installed!"
