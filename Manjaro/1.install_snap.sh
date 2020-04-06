@@ -16,9 +16,9 @@ ln -s /var/lib/snapd/snap /snap
 }
 
 CheckSnap() {
-which snap
+which $pack > /dev/null 2>&1
 errorcode=$?
-if [ test $errorcode -eq 0 ]; then
+if [ $errorcode -eq 0 ]; then
     InstallPacks
 else
     InstallSnap
