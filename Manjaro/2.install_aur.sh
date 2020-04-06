@@ -6,9 +6,9 @@ gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
 toInstall=(tor-browser anydek visual-studio-code-bin github-desktop-git google-chrome teamviewer chromium-vaapi-bin jdownloader2 lutris-git)
 for pack in ${toInstall[*]}
 do
-    yay -Qs $pack
+    yay -Qs $pack /dev/null 2>&1
     errorcode=$?
-    if [ test $errorcode -eq 1 ]; then
+    if [ $errorcode -eq 1 ]; then
         yay -S $pack --noconfirm
     fi
 done
