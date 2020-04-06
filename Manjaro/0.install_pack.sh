@@ -11,12 +11,12 @@ done
 
 # Install Packages
 InstallPacks() {
-toInstall=(git base-devel expac yajl yay plasma-vault qbittorrent micro neofetch bleachbit nodejs-lts-erbium npm keepass filezilla putty freerdp remmina snap)
+toInstall=(git base-devel expac yajl yay plasma-vault qbittorrent micro neofetch bleachbit nodejs-lts-erbium npm keepass filezilla putty freerdp remmina)
 for pack in ${toInstall[*]}
 do
-    which $pack
+    which $pack > /dev/null 2>&1
     errorcode=$?
-    if [ test $errorcode -eq 1 ]; then
+    if [ $errorcode -eq 1 ]; then
         pacman -S $pack --noconfirm
     fi
 done
