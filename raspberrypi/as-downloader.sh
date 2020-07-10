@@ -1,7 +1,7 @@
 sudo apt update
 sudo apt upgrade -y
-sudo apt install exfat-fuse
-sudo apt install ntfs-3g
+sudo apt install exfat-fuse -y
+sudo apt install ntfs-3g -y
 # Installing jDownloader 2
 sudo apt-get -y --allow-change-held-packages install openjdk-8-jdk
 sudo mkdir /opt/jd2
@@ -11,7 +11,7 @@ sudo chmod -R 777 /opt/jd2
 java -jar /opt/jd2/JDownloader.jar
 # create folder path desktop file
 # Installing qBittorrent
-sudo apt install qBittorrent qBittorrent-nox
+sudo apt install qbittorrent qbittorrent-nox -y
 # set crontab
 tempCron=/tmp/chron
 jdEntry="* * * * * java -jar /opt/jd2/JDownloader.jar 2>/dev/null &"
