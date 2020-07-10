@@ -2,7 +2,7 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install exfat-fuse -y
 sudo apt install ntfs-3g -y
-# Installing jDownloader 2
+# Installing jDownloader 2 [guide](https://macheronte.com/installiamo-jdownloader-su-raspberry-pi/)
 sudo apt-get -y --allow-change-held-packages install openjdk-8-jdk
 sudo mkdir /opt/jd2
 cd /opt/jd2
