@@ -1,7 +1,14 @@
 sudo apt update
 sudo apt upgrade -y
+sudo apt install exfat-fuse
+sudo apt install ntfs-3g
 # Installing jDownloader 2
 sudo apt-get -y --allow-change-held-packages install openjdk-8-jdk
+sudo mkdir /opt/jd2
+cd /opt/jd2
+sudo wget -O /opt/jd2/JDownloader.jar 'http://installer.jdownloader.org/JDownloader.jar'
+sudo chmod -R 777 /opt/jd2
+java -jar /opt/jd2/JDownloader.jar
 # create folder path desktop file
 # Installing qBittorrent
 sudo apt install qBittorrent qBittorrent-nox
