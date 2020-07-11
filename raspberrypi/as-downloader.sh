@@ -12,6 +12,7 @@ java -jar /opt/jd2/JDownloader.jar
 # create folder path desktop file
 # Installing qBittorrent
 sudo apt install qbittorrent qbittorrent-nox -y
+# default credential - admin/adminadmin
 # set crontab
 tempCron=/tmp/chron
 jdEntry="* * * * * java -jar /opt/jd2/JDownloader.jar 2>/dev/null &"
@@ -20,3 +21,13 @@ crontab -u $USER -l >$tempCron
 echo "$qbEntry" >> $tempCron
 echo "$jdEntry" >> $tempCron
 crontab $tempCron
+# Force VNC Resolution
+# set framebuffer_width=1366
+# set framebuffer_height=768
+# sudo nano /boot/config.txt
+# Disable HDMI port
+/usr/bin/tvservice -o
+# Enable HDMI port /usr/bin/tvservice -p
+# Disable logging
+# sudo nano /etc/rsyslog.conf -> comment with #
+# refresh systemd service systemctl daemon-reload
