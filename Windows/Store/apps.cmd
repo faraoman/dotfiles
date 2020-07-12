@@ -16,6 +16,14 @@ curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/12405
 @echo Install Windows Terminal
 powershell -command "Add-AppxPackage -Path "WindowsTerminal.AppxBundle""
 @echo Download YourPhone
-curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f6496d5a-f2c9-4121-9be4-601469f1a482?P1=1594556773&P2=402&P3=2&P4=nVbV3foK4ahpM15iUKNVzntucGlWlucbm5VTssY%2fqrrAPO7ihcxfnAa68XUN9NPcxR6pK%2fSuFC2ZvgqicYpY6w%3d%3d -- out Microsoft.YourPhone.AppxBundle
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f6496d5a-f2c9-4121-9be4-601469f1a482?P1=1594556773&P2=402&P3=2&P4=nVbV3foK4ahpM15iUKNVzntucGlWlucbm5VTssY%2fqrrAPO7ihcxfnAa68XUN9NPcxR6pK%2fSuFC2ZvgqicYpY6w%3d%3d --output Microsoft.YourPhone.AppxBundle
 @echo Install YourPhone
 powershell -command "Add-AppxPackage -Path "Microsoft.YourPhone.AppxBundle""
+@echo Download HEVC Video Extensions from Device Manufacturer
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/c6d93e06-a2a4-4fdc-b207-2ddd8349dbfa?P1=1594556371&P2=402&P3=2&P4=gs8KNDAjg0lGYC57jSrc31mkkgWVwxfq%2fVnQvo35utdC1IAE7WlWVaYj70Y6Qg6VBGz1JCWLpc1yJ4Q59ZaJCg%3d%3d --outpit HEVCVideoExtension.AppxBundle
+@echo Install HEVC Video Extensions from Device Manufacturer
+powershell -command "Add-AppxPackage -Path "HEVCVideoExtension.AppxBundle""
+@echo Download HEIF Image Extensions
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/84c6d18f-97ad-436f-961b-bd10f20a4e0a?P1=1594556503&P2=402&P3=2&P4=JIj5L6mt4jY%2fxh2luQaskTiIJy8p6AWorIEzOYGiUpSJ5bOJfqjTcdP%2fxIZCNvKSQ5WKLREcUeZHE9QKfvC2ng%3d%3d --output HEIFImageExtension.AppxBundle
+@echo Install HEIF Image Extensions
+powershell -command "Add-AppxPackage -Path "HEIFImageExtension.AppxBundle""
