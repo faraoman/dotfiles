@@ -39,3 +39,8 @@ powershell -command "Add-AppxPackage -Path "HEIFImageExtension.AppxBundle""
 curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f21cbf4b-161b-4d1f-b592-baf05e16376c?P1=1594798540&P2=402&P3=2&P4=GHCYDnPrvHduernRR1w1uAdxU662Y4sAEwiLG2G6j0Td81zq6CqmEXf9q%2bo4lzE3nTNipd1AaNeipg7fS9NmPw%3d%3d --output Netflix.AppxBundle
 @echo Install Netflix
 powershell -command "Add-AppxPackage -Path "Netflix.AppxBundle""
+
+@echo Download Shazam
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/42893d2a-6de0-42b4-8d4c-1af6a0065fa1?P1=1594888363&P2=402&P3=2&P4=OF6bLn%2fpSWSF0ZNINDy47jqbbf26r8hCLWa0rUb%2f6Abkl2NtStuKbL02oqFehLfUspWiLVdDHAr0ioxqaVmj4w%3d%3d --output Shazam.AppxBundle
+@echo Install Shazam
+powershell -command "Add-AppxPackage -Path "Shazam.AppxBundle""
