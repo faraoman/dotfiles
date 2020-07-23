@@ -44,3 +44,8 @@ powershell -command "Add-AppxPackage -Path "Netflix.AppxBundle""
 curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/42893d2a-6de0-42b4-8d4c-1af6a0065fa1?P1=1594888363&P2=402&P3=2&P4=OF6bLn%2fpSWSF0ZNINDy47jqbbf26r8hCLWa0rUb%2f6Abkl2NtStuKbL02oqFehLfUspWiLVdDHAr0ioxqaVmj4w%3d%3d --output Shazam.AppxBundle
 @echo Install Shazam
 powershell -command "Add-AppxPackage -Path "Shazam.AppxBundle""
+
+@echo Download Microsoft Office OneNote
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/c97bdd6e-3755-4315-8f42-e058a0ed1b76?P1=1595534518&P2=402&P3=2&P4=UROVn9SvQRSZU27BZ6VSktYSicKtsHCdxNKRJrFdp8IVx8xcVMlPtZwKx9Obw1S23p1ooHC6i5o8Vy%2fmgTR9Eg%3d%3d --output Microsoft.Office.OneNote.AppxBundle
+@echo Install Microsoft Office OneNote
+powershell -command "Add-AppxPackage -Path "Microsoft.Office.OneNote.AppxBundle""
