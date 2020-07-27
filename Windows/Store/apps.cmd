@@ -50,6 +50,7 @@ curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/c97bd
 @echo Install Microsoft Office OneNote
 powershell -command "Add-AppxPackage -Path "Microsoft.Office.OneNote.AppxBundle""
 
+<<<<<<< Updated upstream
 @echo Download Microsoft Todos
 curl -L http://11.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/d3e67fd8-0a34-4008-8939-4fc17cf72cd7?P1=1595837147&P2=402&P3=2&P4=QW4SfDuPKXwVbjRQxEZitAqQ7dD5FLOO%2b4G0buOZmwxXUJR4GtHU045KemqBglv1JVTi43stIPQN4wxEuqS7sA%3d%3d --output Microsoft.Todos.AppxBundle
 @echo Install Microsoft Todos
@@ -59,3 +60,9 @@ powershell -command "Add-AppxPackage -Path "Microsoft.Todos.AppxBundle""
 curl -L http://3.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/9274f14d-2587-45c7-ae25-847b3f933977?P1=1595836267&P2=402&P3=2&P4=oa%2fC6J%2f3%2fzBQjPa9m0L9mMWLQC%2fEUST7ykRFRy5pYjReJjct077MiWT9t9zYMRuUWz6JvyWUtF18xxSOEnnPOQ%3d%3d --output TelegramDesktop.AppxBundle
 @echo Install Telegram Dektop
 powershell -command "Add-AppxPackage -Path "TelegramDesktop.AppxBundle""
+=======
+@echo Download DBeaver CE
+curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/04ba7fee-1016-4e24-9938-78c3c7164a50?P1=1595535204&P2=402&P3=2&P4=QJopKvWyQ8WBTnlppOFaxAujguqG168QShxVLusCr7NDVBXE%2fFG%2b7LQS2tdUqfbCq%2fVkJbg5OaSlTVMyxkii7Q%3d%3d --output DBeaverCE.AppxBundle
+@echo Install DBeaver CE
+powershell -command "Add-AppxPackage -Path "DBeaverCE.AppxBundle""
+>>>>>>> Stashed changes
