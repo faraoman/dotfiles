@@ -64,3 +64,8 @@ powershell -command "Add-AppxPackage -Path "TelegramDesktop.AppxBundle""
 curl -L http://tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/04ba7fee-1016-4e24-9938-78c3c7164a50?P1=1595535204&P2=402&P3=2&P4=QJopKvWyQ8WBTnlppOFaxAujguqG168QShxVLusCr7NDVBXE%2fFG%2b7LQS2tdUqfbCq%2fVkJbg5OaSlTVMyxkii7Q%3d%3d --output DBeaverCE.AppxBundle
 @echo Install DBeaver CE
 powershell -command "Add-AppxPackage -Path "DBeaverCE.AppxBundle""
+
+@echo AV1 Video Extension
+curl -L http://2.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/aa03f61b-699c-44f6-ae8d-c47a14fc3b36?P1=1598031469&P2=402&P3=2&P4=F0FpLT6m7eq%2byuDqLEIuqrC9v6oQFMJSGrVJRSGNUHEr2sSMq4EuSANMP0voZH2FBcCbUNXAqwZfmGoj77kqNw%3d%3d --output AV1VideoExtension.AppxBundle
+@echo AV1 Video Extension
+powershell -command "Add-AppxPackage -Path "AV1VideoExtension.AppxBundle""
