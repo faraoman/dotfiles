@@ -23,3 +23,4 @@ fi
 
 echo "Installing packs..."
 InstallPacks
+echo use: 'systemctl enable --now anydesk' to enable the AnyDesk service
