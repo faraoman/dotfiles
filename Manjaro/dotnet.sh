@@ -10,3 +10,4 @@ chmod +x dotnet-install.sh
 ./dotnet-install.sh --channel 5.0
 ./dotnet-install.sh --channel 6.0
 echo alias dotnet=$HOME/.dotnet/dotnet >> .bashrc
+echo alias dotnet=$HOME/.dotnet/dotnet >> .zshrc
