@@ -9,5 +9,8 @@ chmod +x dotnet-install.sh
 ./dotnet-install.sh --channel 3.1
 ./dotnet-install.sh --channel 5.0
 ./dotnet-install.sh --channel 6.0
+# append dotnet into $PATH
 echo alias dotnet=$HOME/.dotnet/dotnet >> .bashrc
 echo alias dotnet=$HOME/.dotnet/dotnet >> .zshrc
+# installing templates
+$HOME/.dotnet/dotnet new -i "Avalonia.Templates::*"
