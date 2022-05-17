@@ -7,3 +7,11 @@ https://wiki.archlinux.org/title/AMDGPU#Enable_Southern_Islands_(SI)_and_Sea_Isl
 
 # Fix Oracle VirtualBox file picker on KDE
 Edit the Oracle VirtualBox menu entry using this command: `KDE_FULL_SESSION= XDG_CURRENT_DESKTOP= DESKTOP_SESSION= VirtualBox %U`
+
+# Add linux-amd (ZEN3) kernel Repository
+Edit `/etc/pacman.conf` and add:
+```
+[linuxkernels]
+Server = http://nhameh.ovh/$repo/$arch
+SigLevel = Optional TrustAll
+```
